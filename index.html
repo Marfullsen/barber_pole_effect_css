@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber Pole Effect CSS</title>
+    <style>
+        .flex-center-x{
+        display: flex;
+        justify-content: center;
+        }
+        #poles{
+        display: flex;
+        justify-content: space-between;
+        }
+        #pole1 {
+        display: inline-block;
+        width: 49%;
+        min-height: 45vh;
+        position: relative;
+        background-image: repeating-linear-gradient(
+          45deg,
+          #fff,
+          #fff 50px,
+          #9fcbda 50px,
+          #9fcbda 100px
+        );
+        background-size: 200%;
+        background-position: right;
+        background-attachment: fixed;
+        animation: animateBg1 20s linear infinite;
+      }
+      @keyframes animateBg1{
+        100%{
+          background-position: left;
+        }
+      }
+
+      #pole2 {
+        display: inline-block;
+        width: 49%;
+        min-height: 45vh;
+        position: relative;
+        background-image: repeating-linear-gradient(
+          45deg,
+          #ce7e00,
+          #ce7e00 50px,
+          #000 50px,
+          #000 100px
+        );
+        background-size: 200%;
+        background-position: right;
+        background-attachment: fixed;
+        animation: animateBg2 20s linear infinite;
+      }
+      @keyframes animateBg2{
+        100%{
+          background-position: left;
+        }
+      }
+    </style>
 </head>
 <body>
-    
+    <main>
+        <h1 class="flex-center-x">Barber poles effect CSS</h1>
+        <article id="poles">
+            <section id="pole1"></section>
+            <section id="pole2"></section>
+        </article>
+    </main>
 </body>
 </html>
