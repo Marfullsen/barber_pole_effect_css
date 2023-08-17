@@ -9,7 +9,7 @@
         display: flex;
         justify-content: center;
         }
-        #poles{
+        .poles{
         display: flex;
         justify-content: space-between;
         }
@@ -43,10 +43,10 @@
         position: relative;
         background-image: repeating-linear-gradient(
           45deg,
-          #ce7e00,
-          #ce7e00 50px,
-          #000 50px,
-          #000 100px
+          #ff8d00,
+          #ff8d00 50px,
+          #212427 50px,
+          #212427 100px
         );
         background-size: 200%;
         background-position: right;
@@ -58,15 +58,50 @@
           background-position: left;
         }
       }
+        .pole3 {
+            width: 49%;
+            height: 5px;
+            background-color: #fff;
+            background-repeat: repeat-y;
+            background-size: 100% 88px;
+            background-position: 0% 0%;
+            background-image: repeating-linear-gradient(-25deg, #fff, #fff 20px, #9fcbda 20px, #9fcbda 40px, #fff 40px, #fff 60px, #9fcbda 60px, #9fcbda 80px);
+            animation: barberpole 14s linear infinite;
+        }
+
+        .pole4 {
+            width: 49%;
+            height: 5px;
+            background-color: #fff;
+            background-repeat: repeat-y;
+            background-size: 100% 88px;
+            background-position: 0% 0%;
+            background-image: repeating-linear-gradient(-25deg, #000, #000 20px, #e37222 20px, #FFAC00 40px, #000 40px, #000 60px, #e37222 60px, #ff851b 80px);
+            animation: barberpole 14s linear infinite;
+        }
+
+        @keyframes barberpole {
+            from {
+                background-position: 0% 0%;
+            }
+            to {
+                background-position: 0% 1000%;
+            }
+        }
     </style>
 </head>
 <body>
     <main>
         <h1 class="flex-center-x">Barber poles effect CSS</h1>
-        <article id="poles">
+        <article class="poles">
             <section id="pole1"></section>
             <section id="pole2"></section>
         </article>
+        <article class="poles">
+            <section class="pole3"></section>
+            <section class="pole4"></section>
+        </article>
+
     </main>
 </body>
 </html>
