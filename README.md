@@ -6,7 +6,7 @@
 
 # Barber Poles Effect CSS
 
-Imitacion del efecto del típico poste de los barberos en CSS.
+Imitación del efecto del típico poste de los barberos en CSS.
 
 </div>
 
